@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="idotalmor.whatisapp.LoginAc"
+    android:background="#22a485">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/formLayout"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:src="@drawable/app_login_logo"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="WhatzUp"
+            android:textSize="35sp"
+            android:fontFamily="sans-serif"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/formLayout"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+        <EditText
+            android:id="@+id/LoginUserName"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="  Email"
+            android:drawableLeft="@drawable/emailiconsmall"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"
+            android:background="@android:color/white"
+            android:textColor="#9E9E9E"
+            android:layout_marginBottom="9dp"
+            android:paddingLeft="15dp"/>
+        <EditText
+            android:id="@+id/LoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint=" Password"
+            android:drawableLeft="@drawable/lockiconsmall"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:background="@android:color/white"
+            android:textColor="#9E9E9E"
+            android:layout_marginBottom="35dp"
+            android:paddingLeft="15dp"/>
+
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECEEF1"
+            android:text="Login"
+            android:textColor="#22a485"
+            android:onClick="LoginBtnFunc"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:onClick="RegisterBtn"
+            android:text="Not a member? Sign up now."
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

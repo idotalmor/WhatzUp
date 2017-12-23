@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/addFriendTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add A Friend"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:background="#22a485"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/addFriendTitle"
+        android:weightSum="10"
+        android:layout_marginBottom="20dp">
+        <EditText
+            android:id="@+id/AddFriendEdTxt"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="8"
+            android:layout_gravity="center"
+            android:hint="  Email"
+            android:drawableLeft="@drawable/emailiconsmall"
+            android:background="#ECEEF1"
+            android:textColor="#9E9E9E"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:paddingLeft="15dp"/>
+        <Button
+            android:id="@+id/addFriendBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:layout_marginRight="9dp"
+            android:text="Add"
+            android:backgroundTint="#22a485"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
